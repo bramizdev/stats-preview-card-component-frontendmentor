@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <picture class="card-picture">
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/image-header-desktop.jpg"
+          />
+          <source
+            media="(min-width: 250px)"
+            srcset="./images/image-header-mobile.jpg"
+          />
+          <img
+            src="./images/image-header-mobile.jpg"
+            alt="an image of a business meeting"
+          />
+        </picture>
+        <div class="card-content">
+          <h1 class="card-header">
+            Get <span class="card-header-highlight">insights</span> that help
+            your business grow.
+          </h1>
+          <p class="card-text">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+          <div class="card-stats">
+            <div class="card-stat">
+              <strong>10k+</strong>
+              <p>companies</p>
+            </div>
+            <div class="card-stat">
+              <strong>314</strong>
+              <p>templates</p>
+            </div>
+            <div class="card-stat">
+              <strong>12m+</strong>
+              <p>queries</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/bramizdev" target="_blank">Brayan Miza</a>.
+    </footer>
+  </body>
+</html>
