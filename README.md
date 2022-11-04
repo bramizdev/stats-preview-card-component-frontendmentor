@@ -45,36 +45,37 @@ Users should be able to:
 This was a real challenge to me specially the filter on the image, this is the way I did it, however I'm not sure if this was the correct approach.
 
 ```html
-<picture class="card-picture">
-          <source
-            media="(min-width: 768px)"
-            srcset="./images/image-header-desktop.jpg"
-          />
-          <source
-            media="(min-width: 250px)"
-            srcset="./images/image-header-mobile.jpg"
-          />
-          <img
-            src="./images/image-header-mobile.jpg"
-            alt="an image of a business meeting"
-          />
+    <picture class="card-picture">
+      <source
+        media="(min-width: 768px)"
+        srcset="./images/image-header-desktop.jpg"
+       />
+      <source
+        media="(min-width: 250px)"
+        srcset="./images/image-header-mobile.jpg"
+      />
+      <img
+        src="./images/image-header-mobile.jpg"
+        alt="an image of a business meeting"
+      />
+    </picture>
 ```
 ```css
-.card-picture img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  mix-blend-mode: multiply;
-  opacity: 0.8;
-  border-radius: 10px 10px 0 0;
-}
+    .card-picture img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      mix-blend-mode: multiply;
+      opacity: 0.8;
+      border-radius: 10px 10px 0 0;
+    }
 
-.card-picture {
-  display: block;
-  background: var(--color-primary-200);
-  border-radius: 10px 10px 0 0;
-}
+    .card-picture {
+      display: block;
+      background: var(--color-primary-200);
+      border-radius: 10px 10px 0 0;
+    }
 ```
 ## Author
 
